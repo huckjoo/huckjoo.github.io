@@ -10,7 +10,7 @@ function onGeoBad(){
     console.log(new Error("i can't find you"))
 }
 function paintWheather(data){
-    const wheater = document.querySelector(".wheater");
-    wheater.textContent = `🌏위치:${data.name},날씨:${data.weather[0].main}`
+    const wheaterInfo = document.querySelector(".wheater__info");
+    wheaterInfo.textContent = `🌏위치:${data.name},날씨:${data.weather[0].main}`
 }
 navigator.geolocation.getCurrentPosition(onGeoGood,onGeoBad);

@@ -59,11 +59,21 @@ li {
   height: 100vh;
   z-index: -1;
 }
+.change__background {
+  font-size: 20px;
+  transition: all 300ms ease-in;
+  background: none;
+  border: none;
+}
+.change__background:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .screen {
   /* background-color: rgba(0, 0, 0, 0.2); */
   /* color: white; */
   width: 500px;
-  height: 550px;
+  height: 95vh;
   margin: auto;
   margin-top: 10px;
   /* border: 1px solid var(--main-border-color); */
@@ -73,6 +83,9 @@ li {
   text-align: left;
   padding: 10px;
   border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .wheater {
   animation: wheater 2s ease infinite;
@@ -93,7 +106,7 @@ li {
   }
 }
 .clock__text {
-  font-size: 50px;
+  font-size: 60px;
   transition: background-color 300ms ease-in;
   padding: 3px 5px;
   border-radius: 5px;
@@ -141,7 +154,7 @@ li {
 .name__greeting {
   padding: 3px 5px;
   border-radius: 5px;
-  font-size: 35px;
+  font-size: 50px;
   transition: color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
 }
@@ -195,6 +208,7 @@ li {
   outline: none;
 }
 .todo__box {
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,7 +324,7 @@ li {
   cursor: pointer;
 }
 .quotes {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .quote {
