@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productive day</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script defer src="js/background.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/wheater.js"></script>
+    <script defer src="js/name.js"></script>
+    <script defer src="js/todo.js"></script>
+  </head>
+  <body>
+    <div class="screen">
+      <section class="wheater">
+        <span></span>
+      </section>
+      <section class="clock">
+        <span class="clock__text">00:00:00</span>
+      </section>
+      <section class="name">
+        <div class="name__ask hidden">
+          <span class="name__question">이름을 알려주세요!</span>
+          <form class="name__form">
+            <input placeholder="이름이 뭐에요?" class="name__input" />
+          </form>
+        </div>
+        <div class="name__paint">
+          <span class="name__greeting hidden">반가워 000!</span>
+          <button class="name__change hidden">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </section>
+      <section class="todo">
+        <form class="todo__form">
+          <input placeholder="오늘 할 일은?" class="todo__input" />
+        </form>
+        <div class="todo__box">
+          <div>
+            <span class="todo__title"><strong>할 일</strong></span>
+            <div class="todo__list">
+              <ul class="todo__ul"></ul>
+            </div>
+          </div>
+          <div>
+            <span class="todo__title"><strong>끝낸 일</strong></span>
+            <div class="todo__done">
+              <ul class="done__ul"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quotes">
+        <span class="quote">하루하루가 모이면 인생이 된다</span>
+      </section>
+    </div>
+  </body>
+</html>

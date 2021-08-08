@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gowun Dodum", sans-serif;
+  color: white;
+}
+:root {
+  --main-border-color: white;
+}
+body {
+  text-align: center;
+  background-color: black;
+}
+button {
+  background: none;
+  border: none;
+  padding: 3px;
+  margin: 0px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px 10px;
+  text-align: start;
+  border-radius: 20px;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+li {
+  animation: li 1s ease infinite;
+  -moz-animation: li 1s ease infinite;
+  -webkit-animation: li 1s ease infinite;
+}
+
+@keyframes li {
+  0%,
+  100% {
+    text-shadow: 0 0 1px rgb(194, 37, 233), 0 0 5px rgb(194, 37, 233),
+      0 0 10px rgb(194, 37, 233), 0 0 10px rgb(194, 37, 233),
+      0 0 1px rgb(194, 37, 233);
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(121, 8, 115), 0 0 2.5px rgb(121, 8, 115),
+      0 0 5px rgb(121, 8, 115), 0 0 5px rgb(121, 8, 115),
+      0 0 0.5px rgb(121, 8, 115);
+  }
+}
+.hidden {
+  display: none;
+}
+.background__img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.screen {
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  /* color: white; */
+  width: 500px;
+  height: 550px;
+  margin: auto;
+  margin-top: 10px;
+  /* border: 1px solid var(--main-border-color); */
+  border-radius: 20px;
+}
+.wheater {
+  text-align: left;
+  padding: 10px;
+  border-radius: 20px;
+}
+.wheater {
+  animation: wheater 2s ease infinite;
+  -moz-animation: wheater 2s ease infinite;
+  -webkit-animation: wheater 2s ease infinite;
+}
+@keyframes wheater {
+  0%,
+  100% {
+    text-shadow: 0 0 1px rgb(194, 37, 233), 0 0 5px rgb(194, 37, 233),
+      0 0 10px rgb(194, 37, 233), 0 0 10px rgb(194, 37, 233),
+      0 0 1px rgb(194, 37, 233);
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(121, 8, 115), 0 0 2.5px rgb(121, 8, 115),
+      0 0 5px rgb(121, 8, 115), 0 0 5px rgb(121, 8, 115),
+      0 0 0.5px rgb(121, 8, 115);
+  }
+}
+.clock__text {
+  font-size: 50px;
+  transition: background-color 300ms ease-in;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: yellow;
+}
+.clock__text {
+  animation: clock__text 1s ease infinite;
+  -moz-animation: clock__text 1s ease infinite;
+  -webkit-animation: clock__text 1s ease infinite;
+}
+
+@keyframes clock__text {
+  0%,
+  100% {
+    text-shadow: 0 0 1px rgb(173, 247, 151), 0 0 5px rgb(173, 247, 151),
+      0 0 10px rgb(173, 247, 151), 0 0 10px rgb(173, 247, 151),
+      0 0 1px rgb(173, 247, 151);
+    color: #e5fbb8;
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(162, 223, 177), 0 0 2.5px rgb(36, 170, 69),
+      0 0 5px rgb(36, 170, 69), 0 0 5px rgb(36, 170, 69),
+      0 0 0.5px rgb(36, 170, 69);
+    color: rgb(162, 223, 177);
+  }
+}
+
+.name__question {
+  font-size: 30px;
+}
+.name__input {
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--main-border-color);
+}
+.name__change {
+  background: none;
+  border: none;
+  margin-left: 10px;
+}
+.name__change:hover {
+  cursor: pointer;
+}
+.name__greeting {
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 35px;
+  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
+.name__greeting {
+  animation: name__greeting 3s ease infinite;
+  -moz-animation: name__greeting 3s ease infinite;
+  -webkit-animation: name__greeting 3s ease infinite;
+}
+
+@keyframes name__greeting {
+  0%,
+  100% {
+    text-shadow: 0 0 1px yellow, 0 0 5px yellow, 0 0 10px yellow,
+      0 0 10px yellow, 0 0 1px yellow;
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(235, 235, 55), 0 0 2.5px #88813f, 0 0 5px #88813f,
+      0 0 5px #88813f, 0 0 0.5px #88813f;
+    color: rgb(200, 200, 500);
+  }
+}
+
+.name__paint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+.name__change {
+  transition: all 1s ease-in-out;
+}
+.name__change:hover {
+  transform: rotateZ(360deg);
+}
+.todo__title {
+  margin-bottom: 15px;
+}
+.todo__form {
+  padding: 15px 0px;
+}
+.todo__input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-border-color);
+  font-size: 28px;
+  background: transparent;
+}
+.todo__input::placeholder {
+  color: rgb(190, 183, 148);
+  outline: none;
+}
+.todo__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.todo__box {
+  animation: todo__box 3s ease infinite;
+  -moz-animation: todo__box 3s ease infinite;
+  -webkit-animation: todo__box 3s ease infinite;
+}
+
+@keyframes todo__box {
+  0%,
+  100% {
+    text-shadow: 0 0 1px yellow, 0 0 5px yellow, 0 0 10px yellow,
+      0 0 10px yellow, 0 0 1px yellow;
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(235, 235, 55), 0 0 2.5px #88813f, 0 0 5px #88813f,
+      0 0 5px #88813f, 0 0 0.5px #88813f;
+    color: rgb(200, 200, 50);
+  }
+}
+.todo__list {
+  width: 230px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--main-border-color);
+  margin-right: 5px;
+  margin-top: 10px;
+  /* overflow-y: scroll; */
+}
+.todo__deleteBtn:hover {
+  cursor: pointer;
+}
+.todo__checkBtn {
+  animation: todo__checkBtn 3s ease infinite;
+  -moz-animation: todo__checkBtn 3s ease infinite;
+  -webkit-animation: todo__checkBtn 3s ease infinite;
+}
+
+@keyframes todo__checkBtn {
+  0%,
+  100% {
+    text-shadow: 0 0 1px rgb(40, 224, 34), 0 0 5px rgb(40, 224, 34),
+      0 0 10px rgb(40, 224, 34), 0 0 10px rgb(40, 224, 34),
+      0 0 1px rgb(40, 224, 34);
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(34, 117, 31), 0 0 2.5px rgb(34, 117, 31),
+      0 0 5px rgb(34, 117, 31), 0 0 5px rgb(34, 117, 31),
+      0 0 0.5px rgb(34, 117, 31);
+  }
+}
+.todo__checkBtn:hover {
+  cursor: pointer;
+}
+.todo__done {
+  width: 230px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid var(--main-border-color);
+  margin-left: 5px;
+  margin-top: 10px;
+  /* overflow-y: scroll; */
+}
+.todo__span {
+  margin-right: 5px;
+}
+.todo__deleteBtn {
+  animation: todo__deleteBtn 1s ease infinite;
+  -moz-animation: todo__deleteBtn 1s ease infinite;
+  -webkit-animation: todo__deleteBtn 1s ease infinite;
+}
+
+@keyframes todo__deleteBtn {
+  0%,
+  100% {
+    text-shadow: 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 10px red,
+      0 0 1px red;
+    color: red;
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(107, 16, 13), 0 0 2.5px rgb(107, 16, 13),
+      0 0 5px rgb(107, 16, 13), 0 0 5px rgb(107, 16, 13),
+      0 0 0.5px rgb(107, 16, 13);
+    color: rgb(107, 16, 13);
+  }
+}
+.done__deleteBtn {
+  animation: done__deleteBtn 1s ease infinite;
+  -moz-animation: done__deleteBtn 1s ease infinite;
+  -webkit-animation: done__deleteBtn 1s ease infinite;
+}
+
+@keyframes done__deleteBtn {
+  0%,
+  100% {
+    text-shadow: 0 0 1px red, 0 0 5px red, 0 0 10px red, 0 0 10px red,
+      0 0 1px red;
+    color: red;
+  }
+  50% {
+    text-shadow: 0 0 0.5px rgb(235, 235, 55), 0 0 2.5px #88813f, 0 0 5px #88813f,
+      0 0 5px #88813f, 0 0 0.5px #88813f;
+    color: rgb(200, 200, 50);
+  }
+}
+.done__span {
+  margin-right: 5px;
+}
+.done__deleteBtn:hover {
+  cursor: pointer;
+}
+.quotes {
+  margin-top: 20px;
+}
+
+.quote {
+  animation: quote 2s ease infinite;
+  -moz-animation: quote 2s ease infinite;
+  -webkit-animation: quote 2s ease infinite;
+  color: rgb(235, 166, 235);
+}
+
+@keyframes quote {
+  0%,
+  100% {
+    text-shadow: 0 0 1px purple, 0 0 5px purple, 0 0 10px purple,
+      0 0 10px purple, 0 0 1px purple;
+  }
+  50% {
+    text-shadow: 0 0 0.5px black, 0 0 2.5px black, 0 0 5px black, 0 0 5px black,
+      0 0 0.5px black;
+  }
+}
